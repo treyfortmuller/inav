@@ -18,6 +18,8 @@
           # Can be used as a break-glass
           # cmake -DCOMPILER_VERSION_CHECK=OFF ..
           gcc-arm-embedded-13 # Cmake expects 13.2.1
+
+          # TODO (tff): get ninja in here and try that too
         ];
       };
     }
