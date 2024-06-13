@@ -8,6 +8,8 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
+      # TODO (tff): add another extended dev shell with inav-configurator
+      # and inav-blackbox-tools included, they're already in nixpkgs.
       devShell = pkgs.mkShell {
         buildInputs = with pkgs; [
           cmake # version >3.13 is required according to the docs
