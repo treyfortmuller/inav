@@ -1,5 +1,15 @@
 # INAV - navigation capable flight controller
 
+Build a target
+
+```
+nix develop
+mkdir build
+cd build
+cmake -GNinja ..
+ninja -j 8 MATEKF405
+```
+
 # F411 PSA
 
 > INAV no longer accepts targets based on STM32 F411 MCU.
